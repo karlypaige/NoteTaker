@@ -1,6 +1,7 @@
 // Dependencies
 // =============================================================
 var express = require("express");
+var http = require('http');
 
 
 //Express configuration
@@ -21,3 +22,8 @@ require("./routes/htmlRoutes")(app);
 app.listen(PORT, function () {
   console.log("App listening on PORT " + PORT);
 });
+
+http.createServer(function(req,res){ // creates a server
+  res.writeHead(200,{'Content-type':'text/plain'}); //Specifies that the respones "hello" is a text
+  res.end("hello"); //shows the text "hello" on th eweb page
+}).listen(port); // attaches this server to the port no.
