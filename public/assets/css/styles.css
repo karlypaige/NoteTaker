@@ -4,10 +4,6 @@ html, body {
   padding: 0;
 }
 
-textarea {
-  border-width: 0px;
-}
-
 .save-note {
   display: none;
 }
@@ -23,7 +19,7 @@ textarea {
   color: #000000;
   width: 100%;
   outline: none;
-  border-width: 0px;
+  border: none;
 }
 
 .note-textarea {
@@ -35,13 +31,11 @@ textarea {
 .note-title {
   height: 50px;
   margin-top: 13px;
-  font-size: 8rem;
-  border-width: 0px;
+  font-size: 3rem;
 }
 
 .note-title:read-only, .note-textarea:read-only {
   color: #757575;
-  border-width: 0px;
 }
 
 .list-container .card {
