@@ -1,7 +1,7 @@
 // Dependencies
 // =============================================================
 var express = require("express");
-var http = require('http');
+// var http = require('http');
 
 
 //Express configuration

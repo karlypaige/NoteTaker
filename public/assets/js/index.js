@@ -1,3 +1,8 @@
+// window.onload = function() {
+const alert = () => {alert("You are in index.js!!!")};
+const alert2 = () => {console.log("You are in index.js!!!")};
+// }
+
 const $noteTitle = $(".note-title");
 const $noteText = $(".note-textarea");
 const $saveNoteBtn = $(".save-note");
@@ -52,7 +57,7 @@ const renderActiveNote = () => {
 // Get the note data from the inputs, save it to the db and update the view
 const handleNoteSave = function () {
   console.log("button clicked");
-  
+
   const newNote = {
     title: $noteTitle.val(),
     text: $noteText.val(),
